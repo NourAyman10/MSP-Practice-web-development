@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --firstMainColor: #02a3f1;
+  --secondMainColor: #7fba00;
+  --thirdMainColor: #f25123;
+  --firstFontColor: white;
+  --secondFontColorBlack: rgba(0, 0, 0, 0.5);
+  --secondFontColorWhite: rgba(255, 255, 255, 0.5);
+  --mainPadding: 70px;
+}
+
+/* start navigation bar style */
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px var(--mainPadding);
+}
+
+nav .navigations .navigations-items {
+  color: var(--firstFontColor);
+}
+
+nav .navigations {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigations-items ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.navigations-items ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav .login button {
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: white;
+  font-weight: 600;
+}
+
+nav .login svg {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  nav .navigations .navigations-items {
+    display: none;
+  }
+  nav .login button {
+    display: none;
+  }
+
+  nav .login svg {
+    display: block;
+  }
+}
+/* end navigation bar style */
+
+/* start menu section style */
+.menu {
+  position: fixed;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/background_blur.png");
+  background-size: cover;
+  padding: 30px;
+  transition: all 0.5s linear;
+}
+
+.menu .bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.menu .bar .logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu .bar .logo .logoImage img {
+  width: 60px;
+}
+
+.menu .bar .logo .logoInfo h1 {
+  color: var(--firstFontColor);
+  font-size: 16px;
+}
+
+.menu .bar .logo .logoInfo p {
+  color: var(--secondFontColorWhite);
+  font-size: 12px;
+}
+
+.menu .bar .close svg {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu section ul li {
+  list-style: none;
+  font-size: 30px;
+  color: var(--firstFontColor);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.menu section .login {
+  color: var(--thirdMainColor);
+  border-top: 5px solid var(--thirdMainColor);
+  width: fit-content;
+  width: 70%;
+  font-size: 30px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+/* end menu section style */
