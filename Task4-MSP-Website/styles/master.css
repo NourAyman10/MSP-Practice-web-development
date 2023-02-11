@@ -15,6 +15,10 @@
   --mainPadding: 70px;
 }
 
+button {
+  cursor: pointer;
+}
+
 button:active {
     transform: scale(0.98);
 }
@@ -59,7 +63,6 @@ nav .login button {
   border-radius: 30px;
   background-color: white;
   font-weight: 600;
-  cursor: pointer;
 }
 
 nav .login svg {
