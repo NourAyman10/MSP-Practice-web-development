@@ -137,7 +137,7 @@
 
   .services header p {
     font-size: 22px;
-    width: 80%;
+    width: 100%;
   }
 
   .services main {
@@ -146,6 +146,9 @@
 }
 
 @media (max-width: 430px) {
+  .services {
+    background-color: black;
+  }
   .services header .header-container {
     align-items: flex-end;
     margin-bottom: 10px;
@@ -158,6 +161,7 @@
   .services header p {
     font-size: 12px;
     width: 100%;
+    color: var(--secondFontColorWhite);
   }
 
   .services header .header-container button {
@@ -166,5 +170,29 @@
 
   .services main {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .services main div {
+    border-color: rgb(255, 255, 255, 25%);
+  }
+
+  .services main div h3 {
+    color: var(--firstFontColor);
+  }
+  
+  .services main div p {
+    color: var(--secondFontColorWhite);
+  }
+
+  .services main div:nth-child(3) .image {
+    border-color: white;
+  }
+
+  .services main div button {
+    border-color: rgb(255, 255, 255, 25%);
+  }
+  
+  .services main div button svg {
+    fill: var(--secondFontColorWhite);
   }
 }
