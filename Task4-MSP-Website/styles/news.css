@@ -42,6 +42,11 @@
   align-items: flex-start;
   border-radius: 10px;
   min-width: 300px;
+  cursor: pointer;
+}
+
+.news .cards > div:hover {
+  border-color: var(--thirdMainColor);
 }
 
 .news .cards .pricing {
@@ -86,6 +91,11 @@
   fill: rgba(255, 255, 255, 0.25);
   width: 20px;
   height: 20px;
+  cursor: pointer;
+}
+
+.news .cards div .checks div svg:hover {
+  fill: white;
 }
 
 .news .cards div button {
@@ -94,6 +104,12 @@
   border-radius: 30px;
   background-color: transparent;
   color: white;
+}
+
+.news .cards div button:hover {
+  border-color: white;
+  background-color: white;
+  color: black;
 }
 
 .news .cards > div:nth-child(2) {
@@ -136,6 +152,11 @@
   height: 15px;
   background-color: var(--secondFontColorWhite);
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.news .dots div:hover {
+  background-color: var(--thirdMainColor);
 }
 
 .news .dots div:nth-child(2) {

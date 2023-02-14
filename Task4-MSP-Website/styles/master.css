@@ -24,7 +24,7 @@ button {
 }
 
 button:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 /* start navigation bar style */
@@ -53,7 +53,7 @@ nav .navigations {
 }
 
 .navigations-items ul li:hover {
-    color: var(--thirdMainColor);
+  color: var(--thirdMainColor);
 }
 
 .navigations-items ul {
@@ -145,7 +145,7 @@ nav .login svg {
 }
 
 .menu section ul li:hover {
-    color: var(--thirdMainColor);
+  color: var(--thirdMainColor);
 }
 
 .menu section .login {
@@ -158,3 +158,151 @@ nav .login svg {
   cursor: pointer;
 }
 /* end menu section style */
+
+/* start footer style */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-image: url("../images/background_blur.png");
+  background-size: cover;
+  color: white;
+  padding: var(--mainPadding);
+}
+
+/* start first section style */
+
+footer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer > div:first-child .logo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+footer > div:first-child .logo p {
+  color: var(--secondFontColorWhite);
+}
+
+footer > div:first-child > p {
+  color: var(--secondFontColorWhite);
+  width: 70%;
+}
+footer > div:first-child button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+footer > div:first-child button svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--secondFontColorWhite);
+}
+
+footer > div:first-child .social-media {
+  display: flex;
+  gap: 10px;
+}
+
+footer > div:first-child .social-media div {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+footer > div:first-child .social-media div:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* end first section style */
+
+/* start second section style */
+footer > div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer > div:nth-child(2) > div:first-child,
+footer > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer > div:nth-child(2) > div:first-child ul,
+footer > div:nth-child(2) > div:nth-child(2) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer > div:nth-child(2) > div:first-child ul li,
+footer > div:nth-child(2) > div:nth-child(2) ul li {
+  list-style: none;
+  font-size: 20px;
+  white-space: nowrap;
+  color: var(--secondFontColorWhite);
+  cursor: pointer;
+}
+
+footer > div:nth-child(2) > div:first-child ul li:hover,
+footer > div:nth-child(2) > div:nth-child(2) ul li:hover {
+  color: white;
+}
+/* end second section style */
+
+/* start third section style */
+footer > div:nth-child(3) h2 {
+  border-bottom: 3px solid var(--thirdMainColor);
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+footer > div:nth-child(3) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer > div:nth-child(3) ul li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+footer > div:nth-child(3) ul li p {
+  color: var(--secondFontColorWhite);
+}
+
+footer > div:nth-child(3) ul li p:hover {
+  color: white;
+}
+/* end third section style */
+/* end footer style */
+
+@media (max-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  footer > div:nth-child(2) {
+    justify-content: space-between;
+  }
+  footer > div:nth-child(2) > div:first-child,
+  footer > div:nth-child(2) > div:nth-child(2) {
+    gap: 40px;
+  }
+}
